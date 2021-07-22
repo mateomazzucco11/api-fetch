@@ -1,0 +1,46 @@
+.background {
+    background: url(https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .information-weather {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        .weather {
+            background: #f3f3f3;
+            opacity: .9;
+            border-radius: 12px;
+            height: 55%;
+            width: 25%;
+            box-shadow: 6px 6px 16px #f3f3f3;
+            position: relative;
+            .information-country {
+                height: 100%;
+                width: 50%;
+                right: 0;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                direction: rtl;
+                justify-content: space-around;
+                padding-right: 20px;
+                span, p {
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+            .temperature {
+                height: 100%;
+                width: 50%;
+                position: absolute;
+            }
+        }
+    }
+}
